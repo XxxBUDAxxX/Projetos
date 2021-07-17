@@ -40,29 +40,7 @@ namespace Produto
                 pedidos.AddItem(pedido);
             }
 
-             bool j = true;
-            while (j == true)
-            {
-                
-                Console.Write("Deseja remover algum produto? ");
-                char resp = char.Parse(Console.ReadLine().Trim().ToUpper());
-                if (resp == 'S')
-                {
-                    Console.Write("Informe Qual produto : ");
-                    string prod = Console.ReadLine();
-                    Console.Write("Informe a quantidade a ser removida: ");
-                    int quant = int.Parse(Console.ReadLine());
-                    pedidos.RemoverItem(prod);
-
-                        
-
-                    Console.WriteLine(pedidos);
-                }
-                else
-                {
-                    j = false;
-                }
-            }
+            
             Console.WriteLine("PEDIDO FECHADO");
             Console.WriteLine(pedidos);
 
